@@ -3,7 +3,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import cities from './au.json';
 
-const MAPTILER_API_KEY = 'bpDpProWl1d6sa0LkElq'; // Replace with your actual API key
+const MAPTILER_API_KEY = process.env.REACT_APP_MAPTILER_API_KEY;
 
 const AustraliaTravelApp = () => {
   const [showMap, setShowMap] = useState(false);
